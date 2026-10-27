@@ -1,0 +1,38 @@
+html,body{
+  margin:0;
+  padding:0;
+  height:100%;
+  background:#000;
+  overflow:hidden;
+  font-family:sans-serif;
+}
+#gameCanvas{
+  display:block;
+  width:100%;
+  height:100%;
+  background:#111;
+}
+#ui{
+  position:absolute;
+  bottom:10px;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  gap:10px;
+}
+.controlBtn{
+  background:rgba(255,255,255,0.2);
+  border:none;
+  color:#fff;
+  font-size:1.5rem;
+  padding:10px 15px;
+  border-radius:5px;
+}
+.controlBtn:active{
+  background:rgba(255,255,255,0.5);
+}
+@media (orientation: landscape){
+  #ui{
+    bottom:20px;
+  }
+}
